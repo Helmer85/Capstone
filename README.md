@@ -33,11 +33,10 @@ TheHub
 
 ### To Do Items for project
 
-- [x] Create Md file
+- [ ] Create Md file
 - [ ] Create basic site structure
 - [ ] Find API local and national news
 - [ ] Find API for sports 
 - [ ] Find API for Social media
-- [ ] 
 
 
