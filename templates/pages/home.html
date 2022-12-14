@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome.</h1>
+<h2>To The Hub.</h2>
+
+<a href="{% url 'news' %}">News.</a>
+<a href="{% url 'social' %}">Social.</a>
+<a href="{% url 'sports' %}">Sports.</a>
+<a href="{% url 'sports_news' %}">Sports News.</a>
+<a href="{% url 'about' %}">About.</a>
+
+{% endblock %}
