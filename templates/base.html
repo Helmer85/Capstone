@@ -1,31 +1,75 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'css/site.css' %}" />
-        
-        <title>welcome</title>
-            <style>
-            body {
-            background: #555;
-            }
-        
-            .content {
-            max-width: 500px;
-            margin: auto;
-            background: white;
-            padding: 10px;
-            }
-            </style>
-    </head>
-    <div class="content"> <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'css/site.css' %}" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    
+      
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <div class="topnav-centered">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        </button>
+        <div  id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <img style="width: 75px;" src="{% static 'images/hubthumbnail.jpg' %}">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'news' %}">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'technology' %}">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'games' %}">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'sports' %}">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'social' %}">Social</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'login' %}">Login</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+
+
+
+    
     {% block content %} {% endblock %}
+
     <script src="{% static 'js/main.js' %}"></script>
-    </div>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>
-

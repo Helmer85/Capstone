@@ -1,13 +1,7 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %}
+<h1 class="fade-in-text">Welcome</h1>
+<h2 class="fade-in-text2">to the Hub</h2>
 
-{% block content %}
-<h1>Welcome.</h1>
-<h2>To The Hub.</h2>
-
-<a href="{% url 'news' %}">News.</a>
-<a href="{% url 'social' %}">Social.</a>
-<a href="{% url 'sports' %}">Sports.</a>
-<a href="{% url 'sports_news' %}">Sports News.</a>
-<a href="{% url 'about' %}">About.</a>
+<p>The Hub is your leading source of news, sports, and media.</p>
 
 {% endblock %}

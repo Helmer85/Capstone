@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class="fade-in-text">Twitter</h1>
+    <br>
+
+    <div class="card text-white bg-dark mb-3" style="width: 26rem;">
+        <br>
+        <h1 class="fade-in-text">Top Twitter Feeds</h1>  
+          <div class="card-body">
+            <form action= "{% url 'twitter' %}" method = "POST">
+              <select name= "username" class="form-control" id="exampleFormControlSelect1">
+                <option >Click here to choose a top twitter feed.</option>
+                <option value='Neymarjr'>Neymar</option>
+                <option value='CNN'>CNN</option>
+                <option value='BillGates'>Bill Gates</option>
+                <option value='Jtimberlake'>Justin Timberlake</option>
+                <option value='Twitter'>Twitter</option>
+                <option value='Nasa'>NASA</option>
+                <option value='YouTube'>YouTube</option>
+                <option value='BarackObama'>Barack Obama</option>
+                <option value='elonmusk'>Elon Musk</option>
+              </select>
+                <br>
+              <button type= "submit" class="btn btn-dark">Twitter Feed</a>
+
+
+                {% csrf_token %}
+            </form>  
+          </div>
+      </div>
+     
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-dnt="true" data-lang="en">
+  <p>{{ tweet.text }}</p>
+</blockquote>
+<a class="twitter-timeline" data-lang="en" href="{{url}}"></a>
+
+{% endblock %}

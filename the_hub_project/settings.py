@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'the_hub_app',
-]
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -125,3 +125,16 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+
+TWITTER_FEED_CONSUMER_PUBLIC_KEY = 'OFYPwKn1Nd3Fli9Ve86h25bhI'
+TWITTER_FEED_CONSUMER_SECRET = 'siKZ72y6C9r1YcX79RARH3tX9penOMChw9T2lwfivXHzDSWR2P'
+TWITTER_FEED_OPEN_AUTH_TOKEN = '2560542319-tOayYDW6yiMXEKQMfY9fXKAvGtEOtQPB0R0cgNN'
+TWITTER_FEED_OPEN_AUTH_SECRET = 'If2K0k9vRc49p8uAZ4TSRUJaY4LveyyGKAAAXhqWk80ud'

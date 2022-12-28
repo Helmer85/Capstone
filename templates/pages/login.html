@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% block content %}
+<h1 class="fade-in-text">Login</h1>
+<h2 class="fade-in-text2">to the Hub</h2>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <form>
+      <input
+        type="text"
+        id="login"
+        class="fadeIn second"
+        name="login"
+        placeholder="E-Mail"
+      />
+      <input
+        type="password"
+        id="password"
+        class="fadeIn third"
+        name="login"
+        placeholder="Password"
+      />
+      <input type="submit" class="fadeIn fourth" value="Log In" />
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+  </div>
+</div>
+
+
+
+<p>The Hub is your leading source of news, sports, and media.</p>
+
+{% endblock %}

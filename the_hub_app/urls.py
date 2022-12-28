@@ -8,5 +8,9 @@ urlpatterns = [
     path('about/', views.about, name = 'about'),
     path('social/', views.social, name = 'social'),
     path('sports/', views.sports, name = 'sports'),
-    path('sports_news/', views.sports_news, name = 'sports_news'),
+    path('technology/', views.technology, name = 'technology'),
+    path('login/', views.login, name='login'),
+    path('reddit/', views.reddit, name='reddit'),
+    path('twitter/', views.twitter, name= 'twitter'),
+    path('games/', views.games, name='games')
 ]

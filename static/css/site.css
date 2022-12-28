@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+
+*{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    animation: ease-in 5s;
+    font-weight: 400;
+}
+
+
+h2{
+    animation: ease-in 8s;
+}
+
+div{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+div:hover{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.card{   
+    box-shadow: 0 4px 8px 0 rgba(58, 56, 56, 0.2);
+    transition-duration: 2s,2s;
+}
+
+.card:hover{
+    box-shadow: 0 50px 100px 0 rgba(228, 6, 6, 0.2);
+
+}
+
+.fade-in-text {
+    animation: fadeIn 5s;
+}
+
+.fade-in-text2 {
+    animation: fadeIn 10s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.btn{
+    background-color: darkslategray;
+    box-shadow: 0 2px 4px 0 rgba(6, 5, 5, 0.2);
+    color: black;
+    transition-duration: 2s,2s;
+}
+
+.btn:hover{
+    background-color: grey;
+    color: rgb(255, 255, 255);
+}
+
+#submit{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+
