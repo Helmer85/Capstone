@@ -45,8 +45,6 @@ def reddit(request):
     context = {'data': data, 'sub':sub, 'selftext':selftext, 'subPrefix': subPrefix}
     return render(request, 'pages/reddit.html', context,)
 
-    return render(request, 'pages/reddit.html', {'subreddit_data': subreddit_data})
-
 
 def news(request):
     news_api_key = api_keys()

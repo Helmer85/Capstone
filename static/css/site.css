@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 
-
 *{
     font-family: 'Inter', sans-serif;
     text-align: center;
@@ -30,6 +29,7 @@ div:hover{
     margin-right: auto;
 
 }
+
 
 .card{   
     box-shadow: 0 4px 8px 0 rgba(58, 56, 56, 0.2);

@@ -2,21 +2,24 @@
 
 <h1 class="fade-in-text">Random Reddit</h1>
 
-<div class="card text-white bg-dark mb-3" style="width: auto; padding: auto;">
+<div
+  class="jumbotron"
+  class="card text-white bg-dark mb-3"
+  style="width: auto; padding: auto"
+>
   <div class="card-body">
-    <h5 class="card-title">{{ sub }}</h5>
+    <h1 class="display-4">{{ sub }}</h1>
+    <br />
+    <p class="lead">{{ subPrefix }}</p>
+    <br />
     <p class="card-text">{{ selftext }}</p>
-
-
-    <a href="{{ article.url }}" class="btn btn-dark"
-      >Next</a>
-    <a href="https://www.reddit.com/{{ subprefix }}"
-      class="btn btn-dark"
-      >Link to Subreddit</a>
+    <br />
+    <a href="{{ article.url }}" class="btn btn-dark">Next</a>
+    <a href="https://www.reddit.com/{{ subPrefix }}" class="btn btn-dark"
+      >Link to Subreddit</a
+    >
   </div>
 </div>
 <br />
-
-
 
 {% endblock %}
