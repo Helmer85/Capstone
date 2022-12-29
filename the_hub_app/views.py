@@ -32,16 +32,21 @@ def view_function(request):
     return render(request, 'template.html', {'tweet': tweet, 'timeline': timeline})
 
 def reddit(request):
+
     url = "http://www.reddit.com/r/random.json"
-    response = requests.request("GET", url, )
+    headers = {'User-Agent': 'jeff926'}
+    response = requests.get(url, headers=headers)
     data = response.json()
-    print(response.text)
-    subreddit = data["data"]["children"][0]["data"]["subreddit"]
-    print(subreddit)
-    context = {'data': data}
-    return render(request, 'pages/reddit.html', context)
+    selftext = data["data"]["children"][0]["data"]["selftext"]
+    sub = data["data"]["children"][0]["data"]["subreddit"]
+    subPrefix = data["data"]["children"][0]["data"]["subreddit_name_prefixed"]
+
+    print(sub, selftext, subPrefix)
+    context = {'data': data, 'sub':sub, 'selftext':selftext, 'subPrefix': subPrefix}
+    return render(request, 'pages/reddit.html', context,)
 
     return render(request, 'pages/reddit.html', {'subreddit_data': subreddit_data})
+
 
 def news(request):
     news_api_key = api_keys()

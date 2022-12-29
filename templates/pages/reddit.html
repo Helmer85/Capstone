@@ -2,16 +2,17 @@
 
 <h1 class="fade-in-text">Random Reddit</h1>
 
-<div class="card text-white bg-dark mb-3" style="width: 26rem">
+<div class="card text-white bg-dark mb-3" style="width: auto; padding: auto;">
   <div class="card-body">
-    <h5 class="card-title"></h5>
-    <p class="card-text"></p>
-    <p class="card-text"></p>
-    <a
-      href="https://www.reddit.com/"
+    <h5 class="card-title">{{ sub }}</h5>
+    <p class="card-text">{{ selftext }}</p>
+
+
+    <a href="{{ article.url }}" class="btn btn-dark"
+      >Next</a>
+    <a href="https://www.reddit.com/{{ subprefix }}"
       class="btn btn-dark"
-      ></a
-    >
+      >Link to Subreddit</a>
   </div>
 </div>
 <br />
